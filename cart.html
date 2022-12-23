@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cart</title>
+    <link rel="stylesheet" href="css/cart.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-top">
+      <div class="left-nav">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="middle-nav">
+        <input type="text" value="Nourhan Ashraf" />
+      </div>
+      <div class="right-nav">
+        <a href=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href="" class="basket-shopping">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div><p>2</p></div>
+        </a>
+      </div>
+    </nav>
+    <nav class="nav-bottom">
+      <a href="index.html" target="_blank">
+        home
+        <i class="fas fa-caret-down"></i>
+      </a>
+      <a href="">
+        <span>about</span>
+        <i class="fas fa-caret-down"></i>
+      </a>
+      <a href="shop.html" target="_blank">shop</a>
+      <a href="">catalogue</a>
+      <a href="">new arrivals</a>
+      <a href="">contact</a>
+    </nav>
+    <header>
+      <div class="container"><span class="active">Home</span>/ Cart</div>
+    </header>
+    <section class="first-sec">
+      <table class="container">
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Remove</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="image"><img src="images\cloth_1.jpg" alt="" /></td>
+            <td class="title">Top UP T-shirt</td>
+            <td class="price">$49.00</td>
+            <td>
+              <div class="btn">
+                <button>-</button>
+                <input type="number" min="1" max="10" step="1" />
+                <button>+</button>
+              </div>
+            </td>
+            <td class="price">$49.00</td>
+            <td>
+              <button class="btn-x">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="image"><img src="images\cloth_2.jpg" alt="" /></td>
+            <td class="title">Polo Shirt</td>
+            <td class="price">$49.00</td>
+            <td>
+              <div class="btn">
+                <button>-</button>
+                <input type="number" min="1" max="10" step="1" />
+                <button>+</button>
+              </div>
+            </td>
+            <td class="price">$49.00</td>
+            <td>
+              <button class="btn-x">x</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="second-sec">
+      <div class="container">
+        <div class="left">
+          <div class="btn">
+            <button>update cart</button>
+            <button class="active">continue shopping</button>
+          </div>
+          <div>
+            <h3>Coupon</h3>
+            <p>Enter your coupon code if you have one</p>
+            <input type="text" placeholder="Coupon Code" />
+            <button class="apply">Apply Coupon</button>
+          </div>
+        </div>
+        <div class="right">
+          <h3>cart totals</h3>
+          <ul>
+            <li>
+              <p>subtotal</p>
+              <span>$230.00</span>
+            </li>
+            <li>
+              <p>total</p>
+              <span>$230.00</span>
+            </li>
+          </ul>
+          <a href="checkout.html" target="_blank"
+            ><button>proceed to checkout</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="col-1">
+          <h3>Navigations</h3>
+          <div class="content">
+            <ul>
+              <li>Sell online</li>
+              <li>Features</li>
+              <li>Shopping cart</li>
+              <li>Store builder</li>
+            </ul>
+            <ul>
+              <li>Mobile commerce</li>
+              <li>Dropshipping</li>
+              <li>Website development</li>
+            </ul>
+            <ul>
+              <li>Point of sale</li>
+              <li>Hardware</li>
+              <li>Software</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <h3>promo</h3>
+          <img src="images\hero_1.jpg" alt="" />
+          <p class="first-p">Finding your perfect shoes</p>
+          <p class="sec-p">promo from nuary 15-25,2019</p>
+        </div>
+        <div class="col-3">
+          <h3>Contact info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Alexandria,Egypt</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>0115 395 8231</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <p>nourhanaashraf16@gmail.com</p>
+            </li>
+          </ul>
+          <h5>subscribe</h5>
+          <div class="foot">
+            <form action="">
+              <input type="email" placeholder="Email" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p>
+        copyright©2021 All rights reserved| this template is made width
+        <i class="fa-solid fa-heart"></i> by <span>Nourhan Ashraf</span>
+      </p>
+    </footer>
+  </body>
+</html>

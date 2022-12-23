@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link rel="stylesheet" href="css/checkout.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-top">
+      <div class="left-nav">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="middle-nav">
+        <input type="text" value="Nourhan Ashraf" />
+      </div>
+      <div class="right-nav">
+        <a href=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href="" class="basket-shopping">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div><p>2</p></div>
+        </a>
+      </div>
+    </nav>
+    <nav class="nav-bottom">
+      <a href="index.html" target="_blank">
+        home
+        <i class="fas fa-caret-down"></i>
+      </a>
+      <a href="">
+        <span>about</span>
+        <i class="fas fa-caret-down"></i>
+      </a>
+      <a href="shop.html" target="_blank">shop</a>
+      <a href="">catalogue</a>
+      <a href="">new arrivals</a>
+      <a href="">contact</a>
+    </nav>
+    <header>
+      <div class="container">
+        <span class="active">Home</span>/ <span class="active"> cart</span> /
+        chekout
+      </div>
+    </header>
+    <section class="checkout">
+      <div class="container">
+        <input
+          type="text"
+          placeholder="Returning customer? click here to login"
+          id="login"
+        />
+        <div class="content">
+          <div class="billingDetails">
+            <h3>Billing Details</h3>
+            <form action="">
+              <fieldset>
+                <label for="country">country<span>*</span></label>
+                <select name="country" id="country">
+                  <option value="selest a country" selected hidden disabled>
+                    select a country
+                  </option>
+                  <option value="Egypt">Egypt</option>
+                  <option value="Amman">Amman</option>
+                  <option value="Kuwait">Kuwait</option>
+                </select>
+                <div class="parent">
+                  <div class="child">
+                    <label for="">First Name</label>
+                    <input type="text" name="first name" />
+                  </div>
+                  <div class="child">
+                    <label for="">Last Name</label>
+                    <input type="text" name="last name" />
+                  </div>
+                </div>
+                <label for="">Company Name</label>
+                <input type="text" name="company" />
+                <label for="">Address*</label>
+                <input
+                  type="text"
+                  placeholder="street address"
+                  name="address"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="Apartment,suite,unit ect.(optional)"
+                />
+                <div class="parent">
+                  <div class="child">
+                    <label for="">state / country</label>
+                    <input type="text" name="country" />
+                  </div>
+                  <div class="child">
+                    <label for="">posta / Zip</label>
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="parent">
+                  <div class="child">
+                    <label for="">E-mail Address</label>
+                    <input type="text" name="e-mail address" />
+                  </div>
+                  <div class="child">
+                    <label for="">phone</label>
+                    <input
+                      type="text"
+                      placeholder="Phone Number"
+                      name="phone"
+                    />
+                  </div>
+                </div>
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  value="create an account?"
+                  name="check1"
+                />
+                <label for="" class="checkbox">create an account?</label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="checkbox"
+                  value="ship To A Diffrent Address ?"
+                  name="check"
+                />
+                <label for="" class="checkbox"
+                  >ship To A Diffrent Address ?</label
+                >
+                <label for="">Order Notes</label>
+                <textarea
+                  name=""
+                  id=""
+                  cols="50"
+                  rows="10"
+                  placeholder="Write your Notes here"
+                ></textarea>
+              </fieldset>
+            </form>
+          </div>
+          <div class="couponCode">
+            <div class="top">
+              <h3>copoun code</h3>
+              <form action="">
+                <fieldset class="formApply">
+                  <label for="">Enter your copoun code if you have one</label>
+                  <div class="apply">
+                    <input type="text" placeholder="copoun code" />
+                    <button>Apply</button>
+                  </div>
+                </fieldset>
+              </form>
+            </div>
+            <div class="bottom">
+              <h3>Your Order</h3>
+              <fieldset>
+                <ul>
+                  <li>
+                    <p class="head">product</p>
+                    <span class="head">Total</span>
+                  </li>
+                  <li>
+                    <p>Top Up T-shirt x 1</p>
+                    <span>$250.00</span>
+                  </li>
+                  <li>
+                    <p>Polo Shirt x 1</p>
+                    <span>$100.00</span>
+                  </li>
+                  <li>
+                    <p class="body">cart subtotal</p>
+                    <span>$350.00</span>
+                  </li>
+                  <li>
+                    <p class="foot">order total</p>
+                    <span class="foot">$350.00</span>
+                  </li>
+                </ul>
+                <input
+                  type="text"
+                  placeholder="direct bank transfer"
+                  name="bank transfers"
+                  class="first"
+                />
+                <br />
+                <input
+                  type="text"
+                  placeholder="cheque payment"
+                  name="payment"
+                />
+                <br />
+                <input type="text" placeholder="paypal" name="paypal" />
+                <br />
+                <a href="contact.html"
+                  ><button type="submit">place order</button></a
+                >
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="col-1">
+          <h3>Navigations</h3>
+          <div class="content">
+            <ul>
+              <li>Sell online</li>
+              <li>Features</li>
+              <li>Shopping cart</li>
+              <li>Store builder</li>
+            </ul>
+            <ul>
+              <li>Mobile commerce</li>
+              <li>Dropshipping</li>
+              <li>Website development</li>
+            </ul>
+            <ul>
+              <li>Point of sale</li>
+              <li>Hardware</li>
+              <li>Software</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <h3>promo</h3>
+          <img src="images\hero_1.jpg" alt="" />
+          <p class="first-p">Finding your perfect shoes</p>
+          <p class="sec-p">promo from nuary 15-25,2019</p>
+        </div>
+        <div class="col-3">
+          <h3>Contact info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Alexandria,Egypt</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>0115 395 8231</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <p>nourhanaashraf16@gmail.com</p>
+            </li>
+          </ul>
+          <h5>subscribe</h5>
+          <div class="foot">
+            <form action="">
+              <input type="email" placeholder="Email" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p>
+        copyright©2021 All rights reserved| this template is made width
+        <i class="fa-solid fa-heart"></i> by <span>Nourhan Ashraf</span>
+      </p>
+    </footer>
+  </body>
+</html>

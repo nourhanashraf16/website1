@@ -1,0 +1,481 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+/* global variables */
+:root{
+    --input-color: #606770;
+    --input-background-color: #f5f0f0;
+    --main-color:rgb(180, 41, 230);
+    --sec-color:#f0f2f5;
+}
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*nav bar*/
+.nav-top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+.nav-top .left-nav{
+    position: relative;
+    margin-left: 50px;
+}
+.nav-top .left-nav input{
+    width: 100%;
+    padding: 7px 16px 9px 36px;
+    border-radius: 50px;
+    color: var(--input-color);
+    background-color:var(--input-background-color);
+    font-size: 18px;
+    border: none;
+}
+.nav-top .left-nav input:focus{
+    outline: none;
+}
+.nav-top .left-nav .fa-magnifying-glass{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    color: var(--input-color);
+}
+.nav-top .middle-nav{
+    width: 135px;
+}
+.nav-top .middle-nav input{
+    padding: 8px 4px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-top .right-nav {
+    margin-right: 50px;
+
+}
+.nav-top .right-nav a{
+    margin-left: 13px;
+
+}
+.nav-top .right-nav a i{
+    opacity: .6;
+    font-size: 18px;
+    color: black;
+}
+.nav-top .right-nav a i:hover{
+    opacity: 1;
+}
+.nav-top .right-nav .basket-shopping{
+    position: relative;
+
+} 
+.nav-top .right-nav .basket-shopping div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+.nav-top .right-nav .basket-shopping div:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+.nav-bottom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--input-color);
+    margin-right: 15px;
+
+}
+.nav-bottom a:hover{
+    color: var(--main-color);
+} 
+.nav-bottom .active{
+    color: var(--main-color);
+}
+/*header*/
+header{
+    background-image: url(../images/hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    position: relative;
+}
+header .content{
+    position: absolute;
+    width: 350px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    right: 50px;
+}
+header .content h1{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 35px;
+}
+header .content p{
+    font-size: 17px;
+    color: var(--input-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+header .content button{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    opacity: .7;
+    transition: all .1s ease-in;
+}
+header .content button:hover{
+    opacity: 1;
+    scale: 1.1;
+}
+/*first-section*/
+.first-sec .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 290px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+.first-sec .container .col{
+    width:320px;
+    display: flex;
+
+}
+.first-sec .container .col i{
+    color: var(--main-color);
+    font-size: 30px;
+    margin-right: 20px;
+}
+.first-sec .container .col .question{
+    width: 197px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    margin-right: 20px;
+    position: relative;
+}
+.first-sec .container .col .question i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.first-sec .container .col .content h4{
+    margin-bottom: 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.first-sec .container .col .content p{
+    color: var(--input-color);
+    font-size: 15px;
+}
+/*second section*/
+.second-sec .container{
+    height: 550px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-sec .container .col{
+    width: 350px;
+    position: relative;
+}
+.second-sec .container .col a img{
+    width: 100%; /*from col*/
+    text-decoration: none;
+    transition: all .2s ease-in;
+    filter: grayscale(5%);
+}
+.second-sec .container .col a img:hover{
+    scale: 1.1;
+    filter: grayscale(0%);
+}
+.second-sec .container .col .content{
+    position: absolute;
+    bottom:25px;
+    left: 30px;
+}
+.second-sec .container .col .content p{
+    color: white;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.second-sec .container .col .content h2{
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+}
+/*third-sec*/
+.third-sec {
+    background-color: var(--sec-color);
+}
+.third-sec .heading{
+    padding: 50px;
+    text-align: center;
+
+}
+.third-sec .heading h4{
+    position: relative;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+.third-sec .heading h4::before{ /*to create line*/
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--main-color);
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.third-sec .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+.third-sec .container .col{
+    width: 350px;
+    background-color: white;
+
+}
+.third-sec .container .col img{
+    width: 100%;
+}
+.third-sec .container .col .content{
+    padding: 35px 15px;
+    text-align: center;
+
+}
+.third-sec .container .col .content h6{
+    color: var(--main-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+
+}
+.third-sec .container .col .content p{
+    color: var(--input-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.third-sec .container .col .content span{
+    color: var(--main-color);
+    font-size: 13px;
+}
+/*forth-sec*/
+.forth-sec .heading{
+    padding: 50px;
+    text-align: center;
+}
+.forth-sec .heading h4{
+    position: relative;
+    font-size: 18px;
+    font-weight: 600;
+}
+.forth-sec .heading h4::before{ /*to create line*/
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--main-color);
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*forth-sec*/
+.forth-sec {
+    box-shadow:  0px 1px 3px #ccc;
+}
+.forth-sec .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+.forth-sec .container a img{
+    width:500px;
+}
+.forth-sec .container .content{
+    margin-left: 20px;
+    width: 500px;
+    text-align: center;
+}
+.forth-sec .container .content h4{
+    color: var(--main-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+.forth-sec .container .content .first-p{
+    color: var(--input-color);
+    margin-bottom: 15px;
+
+}
+.forth-sec .container .content .first-p span{
+    color: var(--main-color);
+}
+.forth-sec .container .content .sec-p{
+    color: var(--input-color);
+    margin-bottom: 15px;
+}
+.forth-sec .container .content button{
+    padding: 10px 20px;
+    background-color: var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: none;
+    border-radius: 5px;
+    transition: all .1s ease-in;
+    margin-bottom: 15px;
+}
+.forth-sec .container .content button:hover{
+    transform: scale(1.1);
+}
+/*footer*/
+footer{
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-bottom: 120px;
+
+}
+
+footer .container .col-1 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-1 .content{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .container .col-1 .content ul{
+    padding: 10px 40px 10px 0;
+
+}
+footer .container .col-1 .content ul li{
+    padding: 5px 20px 5px 0;
+    color: var(--input-color);
+    font-size:17px;
+    list-style: none;
+}
+
+footer .container .col-2 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-2 img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+footer .container .col-2 .first-p{
+    color: var(--main-color);
+    margin-bottom: 7px;
+}
+footer .container .col-2 .sec-p{
+    color: var(--input-color);
+    font-size: 13px;
+}
+
+footer .container .col-3 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-3 ul li{
+    display: flex;
+    padding: 10px 0;
+    
+}
+footer .container .col-3 ul li i{
+    color: var(--main-color);
+    margin-right: 15px;
+}
+footer .container .col-3 ul li p{
+    color: var(--input-color);
+    font-size: 15px;
+}
+footer .container .col-3 h5{
+    padding: 15px 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+footer .container .col-3 .foot {
+    position: relative;
+
+}
+footer .container .col-3 .foot input{
+     width: 100%;
+     padding: 10px 15px;
+}
+footer .container .col-3 .foot  button{
+    position: absolute;
+    top: 2px;
+    padding: 10px 14px;
+    right: 2px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .1s ease-in;
+}
+footer .container .col-3 .foot  button:hover{
+    transform: scale(1.1);
+}
+footer .container .col-3 .foot input:focus{
+    outline: none;
+}
+footer p{
+    text-align: center;
+    color: var(--input-color);
+    font-size: 14px;
+}
+footer p span {
+    color: var(--main-color);
+}

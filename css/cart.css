@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+/* global variables */
+:root{
+    --input-color: #606770;
+    --input-background-color: #f5f0f0;
+    --main-color:rgb(180, 41, 230);
+    --sec-color:#f0f2f5;
+}
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*nav bar*/
+.nav-top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+.nav-top .left-nav{
+    position: relative;
+    margin-left: 50px;
+}
+.nav-top .left-nav input{
+    width: 100%;
+    padding: 7px 16px 9px 36px;
+    border-radius: 50px;
+    color: var(--input-color);
+    background-color:var(--input-background-color);
+    font-size: 18px;
+    border: none;
+}
+.nav-top .left-nav input:focus{
+    outline: none;
+}
+.nav-top .left-nav .fa-magnifying-glass{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    color: var(--input-color);
+}
+.nav-top .middle-nav{
+    width: 135px;
+}
+.nav-top .middle-nav input{
+    padding: 8px 4px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-top .right-nav {
+    margin-right: 50px;
+
+}
+.nav-top .right-nav a{
+    margin-left: 13px;
+
+}
+.nav-top .right-nav a i{
+    opacity: .6;
+    font-size: 18px;
+    color: black;
+}
+.nav-top .right-nav a i:hover{
+    opacity: 1;
+}
+.nav-top .right-nav .basket-shopping{
+    position: relative;
+
+} 
+.nav-top .right-nav .basket-shopping div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+.nav-top .right-nav .basket-shopping div:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+.nav-bottom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--input-color);
+    margin-right: 15px;
+
+}
+.nav-bottom a:hover{
+    color: var(--main-color);
+} 
+
+/*header*/
+header .container{
+    height: 50px;
+    background-color: var(--sec-color);
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+header .container .active{
+    color: var(--main-color);
+    padding-right: 5px;/*to add space*/
+
+}
+/*first-sec*/
+.first-sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.first-sec .container{
+    width: 100%;
+}
+table, th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  border-collapse: collapse;
+}
+th{
+    padding: 20px 10px;
+}
+.first-sec .container tr .title{
+    font-size: 17px;
+    font-weight: 600;
+}
+.first-sec .container tr .image{
+    padding: 7px 20px;
+    width: 210px;
+}
+.first-sec .container tr .image img{
+    width:170px;
+}
+.first-sec .container tr .price{
+    color: var(--input-color);
+    font-size: 15px;
+}
+.first-sec .container tr .btn{
+    display: flex;
+    justify-content: center;
+}
+.first-sec .container tr .btn button{
+    width: 28px;
+    height: 40px;
+    border: 1px solid var(--main-color);
+    background-color: white;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+
+}
+.first-sec .container tr .btn button:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+.first-sec .container tr  .btn input{
+    text-align: center;
+}
+.first-sec .container tr  .btn input:focus{
+    outline: none;
+}
+.first-sec .container tr .btn-x{
+    width: 55px;
+    height: 40px;
+    background-color: var(--main-color);
+    border:none;
+    border-radius: 3px;
+    font-size: 22px;
+    color: white;
+    opacity: .9;
+}
+.first-sec .container tr .btn-x:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+/* second-sec */
+.second-sec{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+.second-sec .container{
+    display: flex;
+    justify-content: space-between;
+}
+.second-sec .container button{
+    width: 230px;
+    height: 45px;
+    color: white;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 1.6;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    opacity: .9;
+    transition: all .1s ease-in;
+}
+.second-sec .container button:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.second-sec .container .left .btn .active{
+    background-color: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    margin-left: 30px;
+}
+.second-sec .container .left h3{
+    padding: 15px 0 10px;
+    margin-top: 20px;
+}
+.second-sec .container .left p{
+    color: var(--input-color);
+    font-size: 15px;
+    padding: 3px 0 15px;
+
+}
+.second-sec .container .left input{
+    width: 64%;
+    height: 30px;
+}
+.second-sec .container .left input:focus{
+    outline: none;
+}
+.second-sec .container .left .apply{
+    width: 143px;
+    height: 33px;
+    margin-left: 25px;
+}
+
+.second-sec .container .right h3{
+    padding: 15px 0 15px 120px;
+    box-shadow: 0px 1px 3px #ccc;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.second-sec .container .right ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.second-sec .container .right ul li p{
+    color: var(--input-color);
+    padding: 20px;
+}
+.second-sec .container .right ul li span{
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600
+}
+/*footer*/
+footer{
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-bottom: 120px;
+
+}
+
+footer .container .col-1 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-1 .content{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .container .col-1 .content ul{
+    padding: 10px 40px 10px 0;
+
+}
+footer .container .col-1 .content ul li{
+    padding: 5px 20px 5px 0;
+    color: var(--input-color);
+    font-size:17px;
+    list-style: none;
+}
+
+footer .container .col-2 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-2 img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+footer .container .col-2 .first-p{
+    color: var(--main-color);
+    margin-bottom: 7px;
+}
+footer .container .col-2 .sec-p{
+    color: var(--input-color);
+    font-size: 13px;
+}
+
+footer .container .col-3 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-3 ul li{
+    display: flex;
+    padding: 10px 0;
+    
+}
+footer .container .col-3 ul li i{
+    color: var(--main-color);
+    margin-right: 15px;
+}
+footer .container .col-3 ul li p{
+    color: var(--input-color);
+    font-size: 15px;
+}
+footer .container .col-3 h5{
+    padding: 15px 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+footer .container .col-3 .foot {
+    position: relative;
+
+}
+footer .container .col-3 .foot input{
+     width: 100%;
+     padding: 10px 15px;
+}
+footer .container .col-3 .foot  button{
+    position: absolute;
+    top: 2px;
+    padding: 10px 14px;
+    right: 2px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .1s ease-in;
+}
+footer .container .col-3 .foot  button:hover{
+    transform: scale(1.1);
+}
+footer .container .col-3 .foot input:focus{
+    outline: none;
+}
+footer p{
+    text-align: center;
+    color: var(--input-color);
+    font-size: 14px;
+}
+footer p span {
+    color: var(--main-color);
+}

@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+/* global variables */
+:root{
+    --input-color: #606770;
+    --input-background-color: #f5f0f0;
+    --main-color:rgb(180, 41, 230);
+    --sec-color:#f0f2f5;
+}
+.container {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*nav bar*/
+.nav-top{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 1px 3px #ccc;
+}
+.nav-top .left-nav{
+    position: relative;
+    margin-left: 50px;
+}
+.nav-top .left-nav input{
+    width: 100%;
+    padding: 7px 16px 9px 36px;
+    border-radius: 50px;
+    color: var(--input-color);
+    background-color:var(--input-background-color);
+    font-size: 18px;
+    border: none;
+}
+.nav-top .left-nav input:focus{
+    outline: none;
+}
+.nav-top .left-nav .fa-magnifying-glass{
+    position: absolute;
+    top: 12px;
+    left: 11px;
+    color: var(--input-color);
+}
+.nav-top .middle-nav{
+    width: 135px;
+}
+.nav-top .middle-nav input{
+    padding: 8px 4px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.nav-top .right-nav {
+    margin-right: 50px;
+
+}
+.nav-top .right-nav a{
+    margin-left: 13px;
+
+}
+.nav-top .right-nav a i{
+    opacity: .6;
+    font-size: 18px;
+    color: black;
+}
+.nav-top .right-nav a i:hover{
+    opacity: 1;
+}
+.nav-top .right-nav .basket-shopping{
+    position: relative;
+
+} 
+.nav-top .right-nav .basket-shopping div{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:var(--main-color);
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-weight: 800;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in;
+}
+.nav-top .right-nav .basket-shopping div:hover{
+    transform: scale(1.2);
+    opacity: 1;
+}
+.nav-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+
+}
+.nav-bottom a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--input-color);
+    margin-right: 15px;
+
+}
+.nav-bottom a:hover{
+    color: var(--main-color);
+} 
+
+/*header*/
+header .container{
+    height: 50px;
+    background-color: var(--sec-color);
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+}
+header .container .active{
+    color: var(--main-color);
+    padding-right: 5px;/*to add space*/
+    padding-left: 5px;
+}
+/* checkout */
+.checkout{
+    box-shadow: 0px 1px 3px #ccc;
+}
+.checkout .container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.checkout .container #login{
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    color: var(--input-color);
+    border: 1px solid #e3dddd;
+}
+.checkout .container #login:focus{
+    outline: none;
+}
+.checkout .container .content{
+    display: flex;
+    justify-content: space-between;
+}
+.checkout .container .content .billingDetails{
+
+}
+.checkout .container .content .billingDetails h3{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+.checkout .container .content .billingDetails fieldset {
+    padding: 20px 35px;
+}
+.checkout .container .content .billingDetails input{
+    margin-bottom: 20px;
+    padding: 10px 5px;
+    width: 400px;
+}
+.checkout .container .content .billingDetails label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.checkout .container .content .billingDetails select{
+    padding: 10px 5px;
+    width: 400px;
+    color: rgb(89, 89, 89);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.checkout .container .content .billingDetails .parent{
+    display: flex;
+
+
+}
+.checkout .container .content .billingDetails .parent input{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.checkout .container .content .billingDetails .parent .child{
+    margin-right: 40px;
+}
+.checkout .container .content .billingDetails #checkbox{
+    width: 20px;
+}
+.checkout .container .content .billingDetails .checkbox{
+    display: inline;
+}
+.checkout .container .content .billingDetails textarea{
+    width: 400px;
+    padding: 10px;
+    color: var(--input-color);
+}
+input , textarea ,select:focus{
+    outline: none;
+}
+.checkout .container .content .couponCode .top h3{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.checkout .container .content .couponCode .top label{
+    font-size: 15px;
+    padding: 2px 0;
+}
+.checkout .container .content .couponCode .top input{
+    width: 300px;
+    padding: 8px 4px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.checkout .container .content .couponCode .top .apply{
+    position: relative;
+}
+.checkout .container .content .couponCode .top .apply button{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    padding: 13px;
+    font-size: 15px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    transition: all .1s ease-in;
+}
+.checkout .container .content .couponCode .top .apply button:hover{
+    transform: scale(1.1);
+}
+.checkout .container .content .couponCode .top .formApply{
+    padding: 50px;
+
+}
+.checkout .container .content .couponCode .bottom h3{
+    padding: 10px 0;
+    margin-bottom: 15px;
+    margin-top: 35px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+.checkout .container .content .couponCode .bottom fieldset{
+    padding: 30px;
+}
+.checkout .container .content .couponCode .bottom fieldset li{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 12px;
+    color: var(--input-color);
+}
+.checkout .container .content .couponCode .bottom fieldset li .head,.body,.foot{
+    font-weight: 600;
+    color: black;
+}
+.checkout .container .content .couponCode .bottom fieldset input{
+    width: 100%;
+    padding: 10px 8px;
+    margin-top: 15px;
+    color: var(--main-color);
+    font-size: 15px;
+    text-transform: capitalize;
+
+}
+.checkout .container .content .couponCode .bottom fieldset ::placeholder{
+    color: var(--main-color);
+}
+.checkout .container .content .couponCode .bottom .first{
+    margin-top: 50px;
+}
+.checkout .container .content .couponCode .bottom a button{
+    padding: 13px;
+    font-size: 15px;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    color: white;
+    text-transform: uppercase;
+    transition: all .1s ease-in;
+    width: 100%;
+    margin-top: 25px;
+}
+.checkout .container .content .couponCode .bottom a button:hover{
+    transform: scale(1.1);
+}
+
+/*footer*/
+footer{
+    padding-top:50px ;
+    padding-bottom: 50px;
+}
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-bottom: 120px;
+
+}
+
+footer .container .col-1 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-1 .content{
+    display: flex;
+    justify-content: space-between;
+
+}
+footer .container .col-1 .content ul{
+    padding: 10px 40px 10px 0;
+
+}
+footer .container .col-1 .content ul li{
+    padding: 5px 20px 5px 0;
+    color: var(--input-color);
+    font-size:17px;
+    list-style: none;
+}
+
+footer .container .col-2 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-2 img{
+    width: 200px;
+    margin-bottom: 15px;
+}
+footer .container .col-2 .first-p{
+    color: var(--main-color);
+    margin-bottom: 7px;
+}
+footer .container .col-2 .sec-p{
+    color: var(--input-color);
+    font-size: 13px;
+}
+
+footer .container .col-3 h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+footer .container .col-3 ul li{
+    display: flex;
+    padding: 10px 0;
+    
+}
+footer .container .col-3 ul li i{
+    color: var(--main-color);
+    margin-right: 15px;
+}
+footer .container .col-3 ul li p{
+    color: var(--input-color);
+    font-size: 15px;
+}
+footer .container .col-3 h5{
+    padding: 15px 0;
+    font-size: 16px;
+    margin-top: 20px;
+}
+footer .container .col-3 .foot {
+    position: relative;
+
+}
+footer .container .col-3 .foot input{
+     width: 100%;
+     padding: 10px 15px;
+}
+footer .container .col-3 .foot  button{
+    position: absolute;
+    top: 2px;
+    padding: 10px 14px;
+    right: 2px;
+    color: white;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    border: none;
+    transition: all .1s ease-in;
+}
+footer .container .col-3 .foot  button:hover{
+    transform: scale(1.1);
+}
+footer .container .col-3 .foot input:focus{
+    outline: none;
+}
+footer p{
+    text-align: center;
+    color: var(--input-color);
+    font-size: 14px;
+}
+footer p span {
+    color: var(--main-color);
+}

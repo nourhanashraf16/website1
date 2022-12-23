@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHOP</title>
+    <link rel="stylesheet" href="css/shop.css" />
+    <!-- icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="nav-top">
+      <div class="left-nav">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="search" />
+      </div>
+      <div class="middle-nav">
+        <input type="text" value="Nourhan Ashraf" />
+      </div>
+      <div class="right-nav">
+        <a href=""><i class="fa-solid fa-user"></i></a>
+        <a href=""><i class="fa-regular fa-heart"></i></a>
+        <a href="" class="basket-shopping">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div><p>2</p></div>
+        </a>
+      </div>
+    </nav>
+    <nav class="nav-bottom">
+      <a href="index.html" target="_blank">
+        <i class="fas fa-caret-down"></i>
+        home
+      </a>
+      <a href="about.html" target="_blank">
+        <i class="fas fa-caret-down"></i>
+        about
+      </a>
+      <a href="" class="active">shop</a>
+      <a href="">catalogue</a>
+      <a href="">new arrivals</a>
+      <a href="">contact</a>
+    </nav>
+    <header>
+      <div class="container"><span class="active">Home</span>/ Shop</div>
+    </header>
+    <section class="shop-sec">
+      <div class="container">
+        <aside>
+          <div class="col-top">
+            <h3>categories</h3>
+            <ul>
+              <li>
+                <h4>Men</h4>
+                <span>(2,220)</span>
+              </li>
+              <li>
+                <h4>Women</h4>
+                <span>(2,550)</span>
+              </li>
+              <li>
+                <h4>Children</h4>
+                <span>(2,124)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-bottom">
+            <div class="col-1">
+              <h3>filter by price</h3>
+              <input type="range" min="75" max="300" class="range" />
+              <p>$75-$300</p>
+            </div>
+            <div class="col-2">
+              <h3>size</h3>
+              <form action="">
+                <div>
+                  <input
+                    type="checkbox"
+                    id="first"
+                    name="size1"
+                    value="small"
+                  />
+                  <label for="first">small(2.319)</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="second"
+                    name="size2"
+                    value="medium"
+                  />
+                  <label for="second">Medium(1.282)</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    id="third"
+                    name="size3"
+                    value="large"
+                  />
+                  <label for="third">large(1.392)</label>
+                </div>
+              </form>
+            </div>
+            <div class="col-3">
+              <h3>Color</h3>
+              <form action="">
+                <div>
+                  <input type="radio" name="color" value="red" id="red" />
+                  <label for="red">red(2.429)</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" value="green" id="green" />
+                  <label for="green">Green(2.298)</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" value="blue" id="blue" />
+                  <label for="blue">blue(1.075)</label>
+                </div>
+                <div>
+                  <input type="radio" name="color" value="purple" id="purple" />
+                  <label for="purple">purple(1.075)</label>
+                </div>
+              </form>
+            </div>
+          </div>
+        </aside>
+        <div class="content">
+          <div class="heading">
+            <h3>Shop All</h3>
+            <div class="right">
+              <form action="">
+                <select name="Latest">
+                  <option selected disabled hidden>LATEST</option>
+                  <option value="Men">Men</option>
+                  <option value="Women">Women</option>
+                  <option value="Children">Children</option>
+                </select>
+                <select name="Reference">
+                  <option value="" selected hidden disabled>REFERENCE</option>
+                  <option value="Relevance">Relevance</option>
+                  <option value="Name,A to Z">Name,A to Z</option>
+                  <option value="Name,Z to A">Name,Z to A</option>
+                  <option value="price,low to high">price,low to high</option>
+                  <option value="price,high to low">price high to low</option>
+                </select>
+              </form>
+            </div>
+          </div>
+          <div class="products">
+            <div class="row">
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Tank Top</h6>
+                  <p>Finding Perfect t-shirt</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\shoe_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Corater</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_2.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Polo Shirt</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_3.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>T-shirt Mockup</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\shoe_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Corater</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Tank Top</h6>
+                  <p>Finding Perfect t-shirt</p>
+                  <span>50$</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\shoe_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Corater</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_2.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Polo Shirt</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_3.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>T-shirt Mockup</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\shoe_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Corater</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_1.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Tank Top</h6>
+                  <p>Finding Perfect t-shirt</p>
+                  <span>50$</span>
+                </div>
+              </div>
+              <div class="col">
+                <a href="singleProduct.html"
+                  ><img src="images\cloth_2.jpg" alt=""
+                /></a>
+                <div class="col-content">
+                  <h6>Polo Shirt</h6>
+                  <p>Finding Perfect products</p>
+                  <span>50$</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="circules">
+        <div class="active">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+      </div>
+    </section>
+    <section class="second-sec">
+      <h4>categories</h4>
+      <div class="container">
+        <div class="col">
+          <a href=""><img src="images\women.jpg" alt="Women" /></a>
+          <div class="content">
+            <p>collections</p>
+            <h2>Women</h2>
+          </div>
+        </div>
+        <div class="col">
+          <a href=""><img src="images\children.jpg" alt="children" /></a>
+          <div class="content">
+            <p>collections</p>
+            <h2>children</h2>
+          </div>
+        </div>
+        <div class="col">
+          <a href=""><img src="images\men.jpg" alt="Men" /></a>
+          <div class="content">
+            <p>collections</p>
+            <h2>Men</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="col-1">
+          <h3>Navigations</h3>
+          <div class="content">
+            <ul>
+              <li>Sell online</li>
+              <li>Features</li>
+              <li>Shopping cart</li>
+              <li>Store builder</li>
+            </ul>
+            <ul>
+              <li>Mobile commerce</li>
+              <li>Dropshipping</li>
+              <li>Website development</li>
+            </ul>
+            <ul>
+              <li>Point of sale</li>
+              <li>Hardware</li>
+              <li>Software</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-2">
+          <h3>promo</h3>
+          <img src="images\hero_1.jpg" alt="" />
+          <p class="first-p">Finding your perfect shoes</p>
+          <p class="sec-p">promo from nuary 15-25,2019</p>
+        </div>
+        <div class="col-3">
+          <h3>Contact info</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Alexandria,Egypt</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i>
+              <p>0115 395 8231</p>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <p>nourhanaashraf16@gmail.com</p>
+            </li>
+          </ul>
+          <h5>subscribe</h5>
+          <div class="foot">
+            <form action="">
+              <input type="email" placeholder="Email" />
+              <button type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <p>
+        copyright©2021 All rights reserved| this template is made width
+        <i class="fa-solid fa-heart"></i> by <span>Nourhan Ashraf</span>
+      </p>
+    </footer>
+  </body>
+</html>
